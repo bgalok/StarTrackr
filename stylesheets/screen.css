@@ -111,3 +111,18 @@ body {
     top: 50%;
     margin-top: -1.1em;
 }
+
+#tab-spots a:after {
+    content: url(../images/sprite.png);
+    clip: rect(0 18px 33px 0px);
+    left: 50%;
+    margin-left: -10px;
+    top: 1.833em;
+    position: absolute;
+}
+
+.page-spots #tab-spots a:after {
+    clip: rect(0 37px 33px 18px);
+    margin-left: -29px;
+}
+
