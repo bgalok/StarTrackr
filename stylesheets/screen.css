@@ -10,6 +10,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   
 body {
 	font-family: "HelveticaNeue", Arial, Helvetica, sans-serif;
+    background: #37040A url(../images/background-body.gif);
+    background-image: url(file:///Users/bgalok/StarTrackr/images/background-body.gif);
+
 }
 
 #tab-bar {
@@ -66,7 +69,44 @@ body {
     color: #111111;
     height: 4.95em;
     margin: 0 0 -0.367em;
+    
+    -webkit-border-bottom-left-radius: 0.286em;
+    -webkit-border-bottom-right-radius: 0.286em;
+
+    -moz-border-radius-bottomleft: 0.286em;
+    -moz-border-radius-bottomright: 0.286em;
+
+    border-bottom-left-radius: 0.286em;
+    border-bottom-right-radius: 0.286em;
+
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+
+    -o-box-shadow: black 0 0 4px 0;
+    -webkit-box-shadow: black 0 0 4px 0;
+    -moz-box-shadow: black 0 0 4px 0;
+
+    box-shadow: black 0 0 4px 0;
 }
+
+.page-sightings #tab-sighting a {
+    background-color: #f2d868;
+}
+
+.page-sightings #tab-sighting a {
+    background-color: #f2d868; 
+}
+    
+.cssgradients .page-sightings #tab-sighting a {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3dc77), color-stop(0.55, #f6e496), color-stop(0.551, #f2d868), to(#eed360));
+
+    background-image: -webkit-linear-gradient(top, #f3dc77, #f6e496 55%, #f2d868 55.1%, #eed360);
+    background-image: -moz-linear-gradient(top, #f3dc77, #f6e496 55%, #f2d868 55.1%, #eed360);
+    background-image: -o-linear-gradient(top, #f3dc77, #f6e496 55%, #f2d868 55.1%, #eed360);
+    background-image: -ms-linear-gradient(top, #f3dc77, #f6e496 55%, #f2d868 55.1%, #eed360);
+
+    background-image: linear-gradient(top, #f3dc77, #f6e496 55%, #f2d868 55.1%, #eed360); 
+}
+
 
 .page-spots #tab-spots a {
     color: #EBC466;
@@ -82,6 +122,38 @@ body {
         
     background-image: linear-gradient(rgba(40, 40, 40, .9), rgba(35, 35, 35, .5) 55%, rgba( 46,46, 46, .1));    
 } 
+
+.page-spots #tab-spots a:before, .page-stars #tab-stars a:before {
+    content: "";
+    display: block;
+    height: 0.5em;
+    margin-left: -0.5em;
+    left: 50%;
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    width: 1em; 
+}
+
+.cssgradients .page-spots #tab-spots a:before, .cssgradients .page-stars #tab-stars a:before {
+     
+       -webkit-border-bottom-left-radius: 0.143em;
+      -webkit-border-bottom-right-radius: 0.143em;
+      -moz-border-radius-bottomleft: 0.143em;
+      -moz-border-radius-bottomright: 0.143em;
+
+      border-bottom-left-radius: 0.143em;
+      border-bottom-right-radius: 0.143em;
+
+      background-image: -webkit-gradient(radial, 50% 0, 0, 50% 0, 7, from(rgba(236, 223, 156, 0.9)), to(rgba(0, 0, 0, 0)));
+
+      background-image: -webkit-radial-gradient(rgba(236, 223, 156, 0.9), rgba(0, 0, 0, 0));
+      background-image: -moz-radial-gradient(rgba(236, 223, 156, 0.9), rgba(0, 0, 0, 0));
+      background-image: -o-radial-gradient(rgba(236, 223, 156, 0.9), rgba(0, 0, 0, 0));
+      background-image: -ms-radial-gradient(rgba(236, 223, 156, 0.9), rgba(0, 0, 0, 0));
+
+      background-image: radial-gradient(rgba(236, 223, 156, 0.9), rgba(0, 0, 0, 0)); 
+}
 
 .table-view {
     background: #7C0C18;
@@ -134,18 +206,42 @@ body {
     margin-top: -1.1em;
 }
 
-#tab-spots a:after {
+#tab-bar a:after {
     content: url(../images/sprite.png);
-    clip: rect(0 18px 33px 0px);
-    left: 50%;
-    margin-left: -10px;
-    top: 1.833em;
     position: absolute;
+    overfolw:hidden;
+    left: 50%;
+    top: 1.833em;
+
+}
+
+.svg #tab-bar a:after {
+    content: url(../images/sprite.svg);
+}
+
+#tab-spots a:after {
+    clip: rect(0 18px 33px 0px);
+    margin-left: -10px;
 }
 
 .page-spots #tab-spots a:after {
     clip: rect(0 37px 33px 18px);
     margin-left: -29px;
+}
+
+#tab-stars a:after {
+    clip: rect(0 87px 33px 38px);
+    margin-left: -64px;
+}
+
+.page-stars #tab-stars a:after {
+    clip: rect(0 140px 33px 88px);
+    margin-left: -115px;
+}
+
+#tab-sighting a:after {
+    clip: rect(0 191px 33px 140px);
+    margin-left: -165px;
 }
 
 @font-face {
