@@ -40,3 +40,50 @@
   z-index: 0;
 }
 
+.show.in {
+  z-index: 10;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 10ms; }
+
+.show.out {
+  z-index: 0;
+}
+
+/* Push in/out */
+@-webkit-keyframes inFromRight {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(0); } 
+}
+.push.in {
+	-webkit-transform: translateX(0);
+	-o-transform: translateX(0);
+	-webkit-animation-name: inFromRight; 
+}
+
+@-webkit-keyframes outToLeft {
+from { -webkit-transform: translateX(0); }
+to { -webkit-transform: translateX(-100%); }
+}
+.push.out {
+	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-webkit-animation-name: outToLeft; 
+}
+
+@-webkit-keyframes inFromLeft {
+from { -webkit-transform: translateX(-100%); }
+to { -webkit-transform: translateX(0); } 
+}
+.push.in.reverse {
+	-o-transform: translateX(0);
+	-webkit-animation-name: inFromLeft; 
+}
+
+@-webkit-keyframes outToRight {
+	from { -webkit-transform: translateX(0); }
+	to { -webkit-transform: translateX(100%); } 
+}
+.push.out.reverse {
+	-o-transform: translateX(100%);
+	-webkit-animation-name: outToRight; 
+}

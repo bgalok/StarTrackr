@@ -3,14 +3,23 @@ $(document).ready(function(){
   $("#tab-bar a").click(function(e){
     e.preventDefault();
     var nextPage = $(e.target.hash);
-    transition(nextPage);
+    transition(nextPage, 'fade');
     $("#tab-bar").attr("className", e.target.hash.slice(1));
   });
-	
-	
+  
+  $("#spots-list li").click(function(e){
+    e.preventDefault();
+    transition("#page-spot", "push");
+  });
+  
+  $("#stars-list li").click(function(e){
+    e.preventDefault();
+    transition("#page-star", "push");
+  });  
+		
 });
 
-function transition(toPage) {
+function transition(toPage, type) {
   var toPage = $(toPage),
     fromPage = $("#pages .current");
     
@@ -19,12 +28,12 @@ function transition(toPage) {
   };
   
   toPage
-    .addClass("current fade in")
+    .addClass("current " + type + " in")
     .one("webkitAnimationEnd", function(){
-      fromPage.removeClass("current fade out");
-      toPage.removeClass("fade in")
+      fromPage.removeClass("current " + type + " out");
+      toPage.removeClass(type + " in")
     });
-  fromPage.addClass("fade out");
+  fromPage.addClass(type + " out");
   
   if(!("WebKitTransitionEvent" in window)){
     toPage.addClass("current");

@@ -4,7 +4,7 @@
     <head>
         <title>StarTrackr</title>
         
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no;" />
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;" />
         
         <link rel="stylesheet" href="stylesheets/screen.css">
         <link rel="stylesheet" href="stylesheets/transitions.css">
@@ -27,7 +27,7 @@
        
         <div id="pages">
             <div id="page-spots" class="current">
-                        <ul id"spots-list" class="table-view table-action">
+                        <ul id="spots-list" class="table-view table-action">
             <li>
                 <a href="spot.html">
                     <h2>Planet Hollywood</h2>
@@ -46,8 +46,8 @@
         
 
             </div>
-            <div id="page-spot">
-    <div class="page-spots">
+            
+    <div id="page-spot" class="page-spots">
       <div class="header">
         <h1>Spots</h1>
         <a href="#" class="back">Back</a>
@@ -120,7 +120,7 @@
           </div><!-- .footer -->
         </div><!-- .scroller -->
       </div><!-- .wrapper -->  
-    </div><!-- .page-spots -->                
+              
             </div>
             <div id="page-sightings">
             
@@ -263,12 +263,9 @@
         </div> 
         
         <script type="text/javascript" src="javascripts/jquery-1.5.min.js"></script>
-        <script type="text/javascript" src="javascripts/Chap 4.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			alert("StarTrackr loaded!");
-		});
-		</script>
+     <script type="text/javascript" charset="utf-8" src="javascripts/Chap 4.js"></script>
+       <script src="javascripts/helper.js"></script>
+
 
     </body>
 </html>
