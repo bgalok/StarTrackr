@@ -1,0 +1,17 @@
+#pages {
+	position: relative;
+}
+
+#pages > div {
+	display: none;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	width: 100%;
+
+}
+
+#pages > div.current {
+	display:block;
+}
+

@@ -91,10 +91,6 @@ body {
 .page-sightings #tab-sighting a {
     background-color: #f2d868;
 }
-
-.page-sightings #tab-sighting a {
-    background-color: #f2d868; 
-}
     
 .cssgradients .page-sightings #tab-sighting a {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3dc77), color-stop(0.55, #f6e496), color-stop(0.551, #f2d868), to(#eed360));
@@ -251,3 +247,184 @@ body {
         url('myfont-webfont.ttf') format('ttf').
         url('myfont-webfont.svg#svgFontName') format('svg').        
 }
+
+.page-sightings form {
+  background: #7c0c18;
+  border-top: 1px #8c2a34 solid;
+  padding: 0.65em 0 0; }
+.page-sightings fieldset {
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+.page-sightings label {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+  color: white;
+  display: block;
+  font-size: 0.75em;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+.page-sightings input {
+  -webkit-border-radius: 0.286em;
+  -moz-border-radius: 0.286em;
+  border-radius: 0.286em;
+  background: #e1cece;
+  border: 1px #3c0603 solid;
+  display: block;
+  font-size: 1.3em;
+  margin: 0.3em 0 0.5em;
+  padding: 0;
+  height: 2em;
+  width: 96%;
+  padding: 0.3em 2%;
+  -webkit-background-clip: padding-box; }
+  .page-sightings input:focus {
+    background: white; }
+.page-sightings input::-webkit-input-placeholder {
+  color: #856969; }
+.page-sightings input:-moz-placeholder {
+  color: #856969; }
+
+.geolocation #label-spot .locate-me {
+  bottom: 1px;
+  top: auto;
+  height: 3.4em;
+  width: 3.2em; }
+
+#save {
+  background: #62030e;
+  border-top: 1px #3c0603 solid;
+  padding-top: 0.65em;
+  padding-bottom: 0.65em; }
+  #save button {
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+    -webkit-border-radius: 0.286em;
+    -moz-border-radius: 0.286em;
+    border-radius: 0.286em;
+    -o-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px 0 inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px 0 inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px 0 inset;
+    font-family: "HelveticaNeue", arial, helvetica sans-serif;
+    background: #edc82b;
+    border: 1px #3c0603 solid;
+    color: #111111;
+    display: block;
+    letter-spacing: 0;
+    font-size: 1.14em;
+    font-weight: bold;
+    padding: 0.55em 0.8em 0.65em;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    -webkit-background-clip: padding-box;
+    width: 100%; }
+
+#photo {
+  margin: 1em 0; }
+  #photo a {
+    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+    -webkit-border-radius: 0.286em;
+    -moz-border-radius: 0.286em;
+    border-radius: 0.286em;
+    -o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+    font-family: "HelveticaNeue", arial, helvetica sans-serif;
+    background: #9a1b27;
+    border: 1px #3c0603 solid;
+    color: white;
+    display: block;
+    letter-spacing: 0;
+    font-size: 1.14em;
+    font-weight: bold;
+    padding: 0.55em 0.8em 0.65em 3.1em;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    -webkit-background-clip: padding-box; }
+    #photo a:after {
+      content: url(../images/sprite.png);
+      position: absolute;
+      top: 0.4em;
+      left: 0.5em;
+      overflow: hidden;
+      clip: rect(0 258px 33px 226px);
+      margin-left: -226px; }
+      .svg #photo a:after {
+        content: url(../images/sprite.svg); }
+
+#show-geo {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+  -webkit-border-radius: 0.286em;
+  -moz-border-radius: 0.286em;
+  border-radius: 0.286em;
+  -o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  font-family: "HelveticaNeue", arial, helvetica sans-serif;
+  background: #9a1b27;
+  border: 1px #3c0603 solid;
+  color: white;
+  display: block;
+  letter-spacing: 0;
+  font-size: 1.14em;
+  font-weight: bold;
+  padding: 0.55em 0.8em 0.65em 3.1em;
+  position: relative;
+  text-decoration: none;
+  margin: 0 0 1em;
+  -webkit-background-clip: padding-box; }
+  #show-geo:after {
+    content: url(../images/sprite.png);
+    position: absolute;
+    top: 0.4em;
+    left: 0.5em;
+    overflow: hidden;
+    clip: rect(0 289px 33px 258px);
+    margin-left: -258px; }
+    .svg #show-geo:after {
+      content: url(../images/sprite.svg); }
+
+#geo-map {
+  height: 300px;
+  width: 100%; }
+
+#geo-container {
+  display: none; }
+
+#geo-container {
+  background-color: #46070e;
+  padding: 1em;
+  min-height: 50px; }
+
+#geo-start, #geo-stop {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+  -webkit-border-radius: 0.286em;
+  -moz-border-radius: 0.286em;
+  border-radius: 0.286em;
+  -o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+  font-family: "HelveticaNeue", arial, helvetica sans-serif;
+  background: #9a1b27;
+  border: 1px #3c0603 solid;
+  color: white;
+  display: block;
+  letter-spacing: 0;
+  font-size: 1em;
+  font-weight: bold;
+  float: left;
+  padding: 0.55em 0.8em 0.65em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 1em;
+  width: 40%;
+  -webkit-background-clip: padding-box; }
+
+#geo-start {
+  margin-right: 4%; }
